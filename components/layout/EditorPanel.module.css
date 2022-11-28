@@ -1,0 +1,15 @@
+@tailwind components;
+
+.editorWrapper {
+  overflow: hidden;
+}
+
+.editorWrapper .cm-editor {
+  height: 100%;
+}
+
+@layer components {
+  .cm-editor {
+    height: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+@tailwind components;
+
+.heroList {
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+  grid-template-columns: 160px;
+  padding: 2rem 0 4rem 0;
+  perspective: 1000;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  /* grid-template-columns: repeat(auto-fill, 160px); */
+}
+
+.heroList .imgWrapper {
+  height: 240px;
+  transition: opacity 1s;
+}
+
+.gauntlet {
+  width: 80px;
+  height: 80px;
+}
+
+.ashHero {
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  /* animation-fill-mode: forwards; */
+}
+
+@media (min-width: 768px) {
+  .heroList {
+    padding: 3rem 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .heroList .imgWrapper {
+    height: 264px;
+  }
+}
