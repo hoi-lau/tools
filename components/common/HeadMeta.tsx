@@ -26,7 +26,7 @@ export default function HeadMeta(props: React.PropsWithChildren) {
           property="og:image"
           content="//qn11.tool.lu/202111/23/135406hUyR4KvpgePlGuTh_1200x630.png"
         />
-        <meta property="og:url" content="https://tool.lu/top/" />
+        <meta property="og:url" content="https://i.imliuk.com/" />
         {/* <meta name="keywords" content="在线工具,排行榜" /> */}
         {/* <meta name="description" content="在线工具 - 排行榜" /> */}
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -43,7 +43,7 @@ export default function HeadMeta(props: React.PropsWithChildren) {
         onLoad={() => {
           /* @ts-ignore */
           new Aegis({
-            id: '0G0aPFz66RGgxodD53',
+            id: 'qVYDQHLDD3g4ren0x9',
             reportApiSpeed: true,
             reportAssetSpeed: true,
             spa: true
