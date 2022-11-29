@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import favicon from '../../public/favicon.ico'
 
 export default function HeadMeta(props: React.PropsWithChildren) {
   return (
@@ -9,7 +10,7 @@ export default function HeadMeta(props: React.PropsWithChildren) {
         rel="search"
         type="application/opensearchdescription+xml"
         title="在线工具"
-        href="https://tool.lu/opensearch.xml"
+        href="https://i.imliuk.com/opensearch.xml"
       /> */}
         <meta
           name="viewport"
@@ -20,15 +21,12 @@ export default function HeadMeta(props: React.PropsWithChildren) {
         {/* <meta property="og:locale:alternate" content="en_US" /> */}
 
         <meta property="og:site_name" content="在线工具" />
-        {/* <meta property="og:description" content="在线工具 - 排行榜" /> */}
+        <meta property="og:description" content="在线工具" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="//qn11.tool.lu/202111/23/135406hUyR4KvpgePlGuTh_1200x630.png"
-        />
+        <meta property="og:image" content="https://i.imliuk.com/favicon.ico" />
         <meta property="og:url" content="https://i.imliuk.com/" />
-        {/* <meta name="keywords" content="在线工具,排行榜" /> */}
-        {/* <meta name="description" content="在线工具 - 排行榜" /> */}
+        <meta name="keywords" content="在线工具" />
+        <meta name="description" content="在线工具" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="apple-mobile-web-app-title" content="在线工具" />
