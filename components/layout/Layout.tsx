@@ -44,11 +44,11 @@ export default function Layout(props: LayoutProps) {
   return (
     <div className={`${styles.layout} antialiased w-screen h-screen text-slate-500 dark:text-slate-400 bg-white dark:bg-gray-700`}>
       <header
-        className={`relative text-sm ${styles.header}`}
+        className={`relative text-sm ${styles.header} pt-8`}
       >
         <nav
           aria-label="Global"
-          className="max-w-screen-xl mx-auto mt-8 text-slate-700 dark:text-slate-200"
+          className="max-w-screen-xl mx-auto text-slate-700 dark:text-slate-200"
         >
           <div className="relative flex items-center py-[1.125rem]">
             <Link
