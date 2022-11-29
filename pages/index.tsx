@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import HeadMeta from '../components/common/HeadMeta'
 import Layout from '../components/layout/Layout'
-import thanosPic from '../public/img/thanos.jpeg'
+// import thanosPic from '../public/img/thanos.jpeg'
 import colorPickerPic from '../public/img/cpicker.svg'
 
 export default function Home() {
@@ -95,10 +95,11 @@ export default function Home() {
           <Link href={'/d/thanos'} target="_blank">
             <div className="card items-center">
               <Image
-                src={thanosPic}
+                src={'https://img.imliuk.com/thanos.jpeg'}
                 alt="thanos"
                 priority={true}
                 width={32}
+                height={32}
                 className="rounded-[16px]"
               />
               <span className="ml-4 text-base">Thanos Snap</span>

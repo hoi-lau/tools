@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Script from 'next/script'
-import favicon from '../../public/favicon.ico'
 
 export default function HeadMeta(props: React.PropsWithChildren) {
   return (
@@ -23,12 +22,12 @@ export default function HeadMeta(props: React.PropsWithChildren) {
         <meta property="og:site_name" content="在线工具" />
         <meta property="og:description" content="在线工具" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://i.imliuk.com/favicon.ico" />
+        <meta property="og:image" content="https://i.imliuk.com/favicon.png" />
         <meta property="og:url" content="https://i.imliuk.com/" />
         <meta name="keywords" content="在线工具" />
         <meta name="description" content="在线工具" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="apple-mobile-web-app-title" content="在线工具" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
