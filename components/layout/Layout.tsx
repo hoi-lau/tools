@@ -42,8 +42,8 @@ export default function Layout(props: LayoutProps) {
   })
 
   return (
-    // dark:bg-gray-700
-    <div className={`${styles.layout} antialiased w-screen h-screen text-slate-500 dark:text-slate-400 bg-white `}>
+    // dark:bg-gray-700 dark:text-slate-400
+    <div className={`${styles.layout} antialiased w-screen h-screen text-slate-500  bg-white `}>
       <header
         className={`relative text-sm ${styles.header} pt-8`}
       >
