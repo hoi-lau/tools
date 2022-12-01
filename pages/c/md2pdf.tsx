@@ -8,6 +8,7 @@ import { ViewUpdate } from '@codemirror/view'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/dark.css'
 import { debounce } from 'hooks'
+import styles from './md2pdf.module.css'
 
 export default function Md2Pdf() {
   const previewRef = useRef<HTMLDivElement>(null)
@@ -182,13 +183,13 @@ export default function Md2Pdf() {
           print
         </button>
       </div>
-      <div className="lg:flex flex-1 w-full overflow-auto">
+      <div className={`lg:flex flex-1 w-full overflow-auto ${styles.editorWrap}`}>
         <div
-          className="flex-1 overflow-auto lg:mr-4 border border-solid border-slate-400 no-print bg-white"
+          className={`flex-1 overflow-auto lg:mr-4 border border-solid border-slate-400 no-print bg-white`}
           ref={editorRef}
         ></div>
         <article
-          className="flex-1 overflow-auto prose max-w-full lg:ml-4 p-4 bg-white"
+          className={`flex-1 overflow-auto prose max-w-full lg:ml-4 p-4 bg-white`}
           ref={previewRef}
         ></article>
       </div>
