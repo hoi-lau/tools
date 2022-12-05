@@ -12,6 +12,12 @@
   /* grid-template-columns: repeat(auto-fill, 160px); */
 }
 
+.elonMusk {
+  position: relative;
+  left: 100px;
+  top: 15px;
+}
+
 .heroList .imgWrapper {
   height: 240px;
   transition: opacity 1s;

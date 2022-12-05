@@ -260,7 +260,7 @@ export default function Thanos() {
       <div>
         <div className="my-4">
           <div className="mb-4 text-gray-800 text-center">
-            <span>模拟灭霸打响指效果</span>
+            <span>模拟灰飞烟灭效果</span>
             <Link
               href={
                 'https://github.com/hoi-lau/tools/blob/main/pages/d/thanos.tsx#L138'
@@ -302,7 +302,15 @@ export default function Thanos() {
             }}
             onClick={handleGauntletClick}
             ref={snapDivRef}
-          ></div>
+          >
+            <Image
+              src={'https://img.imliuk.com/202212051630989.png'}
+              alt={'elon musk'}
+              width={80}
+              height={50}
+              className={`${styles.elonMusk}`}
+            ></Image>
+          </div>
         </div>
         <div ref={heroWrapRef} className={`${styles.heroList} overflow-hidden`}>
           {heroes.map((el, index) => {
