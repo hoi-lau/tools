@@ -1,3 +1,5 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: 'standalone',
@@ -7,8 +9,9 @@ const nextConfig = {
   },
   reactStrictMode: false,
   swcMinify: true,
+  // assetPrefix: isProd ? 'https://img.imliuk.com' : undefined,
   images: {
-    minimumCacheTTL: 60,
+    // minimumCacheTTL: 60,
     domains: ['img.imliuk.com']
   },
   experimental: {

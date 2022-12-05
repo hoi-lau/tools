@@ -100,6 +100,7 @@ export default function Home() {
                 priority={true}
                 width={32}
                 height={32}
+                loader={() => 'https://img.imliuk.com/thanos.jpeg'}
                 className="rounded-[16px]"
               />
               <span className="ml-4 text-base">Thanos Snap</span>

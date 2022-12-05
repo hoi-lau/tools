@@ -308,6 +308,7 @@ export default function Thanos() {
               alt={'elon musk'}
               width={80}
               height={50}
+              loader={() => 'https://img.imliuk.com/202212051630989.png'}
               className={`${styles.elonMusk}`}
             ></Image>
           </div>
@@ -321,6 +322,7 @@ export default function Thanos() {
                   alt={el.alt}
                   sizes="(max-height: 264px) (max-width: 200px)"
                   fill
+                  loader={() => el.img}
                   priority
                 />
               </div>

@@ -26,8 +26,8 @@ export default function HeadMeta(props: React.PropsWithChildren) {
         <meta property="og:url" content="https://i.imliuk.com/" />
         <meta name="keywords" content="在线工具" />
         <meta name="description" content="在线工具" />
-        <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="https://i.imliuk.com/favicon.png" />
+        <link rel="icon" href="https://i.imliuk.com/favicon.png" />
         <meta name="apple-mobile-web-app-title" content="在线工具" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
