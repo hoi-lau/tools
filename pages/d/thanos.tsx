@@ -256,6 +256,13 @@ export default function Thanos() {
         <meta name="keywords" content="Thanos Snap" />
         <meta name="description" content="Thanos Snap" />
         <link rel="prefetch" href="https://img.imliuk.com/thanos_time.png" as="image" />
+        <link rel="prefetch" href="/audio/thanos_snap_sound.mp3" as="audio" />
+        <link rel="prefetch" href="/audio/thanos_reverse_sound.mp3" as="audio" />
+        <link rel="prefetch" href="/audio/thanos_dust_1.mp3" as="audio" />
+        <link rel="prefetch" href="/audio/thanos_dust_2.mp3" as="audio" />
+        <link rel="prefetch" href="/audio/thanos_dust_3.mp3" as="audio" />
+        <link rel="prefetch" href="/audio/thanos_dust_4.mp3" as="audio" />
+        <link rel="prefetch" href="/audio/thanos_dust_5.mp3" as="audio" />
       </HeadMeta>
       <div>
         <div className="my-4">
