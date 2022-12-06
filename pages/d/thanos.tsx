@@ -122,18 +122,18 @@ const heroes = [
   { img: 'https://img.imliuk.com/DeadPool.jpg', alt: 'Coulson' },
   { img: 'https://img.imliuk.com/DoctorStrange.jpg', alt: 'DeadPool' },
   { img: 'https://img.imliuk.com/Gamora.webp', alt: 'DoctorStrange' },
-  { img: 'https://img.imliuk.com/Groot.webp', alt: 'Gamora' },
-  { img: 'https://img.imliuk.com/Hawkeye.webp', alt: 'Groot' },
-  { img: 'https://img.imliuk.com/loki.webp', alt: 'Hawkeye' },
-  { img: 'https://img.imliuk.com/Nebula.webp', alt: 'loki' },
-  { img: 'https://img.imliuk.com/NickFury.webp', alt: 'Nebula' },
-  { img: 'https://img.imliuk.com/Rocket.webp', alt: 'NickFury' },
-  { img: 'https://img.imliuk.com/SamWilson.webp', alt: 'Rocket' },
-  { img: 'https://img.imliuk.com/SpiderMan.jpeg', alt: 'SamWilson' },
-  { img: 'https://img.imliuk.com/StarLord.webp', alt: 'StarLord' },
-  { img: 'https://img.imliuk.com/Textless.webp', alt: 'Textless' },
-  { img: 'https://img.imliuk.com/Wanda.webp', alt: 'Wanda' },
-  { img: 'https://img.imliuk.com/WarMachine.jpg', alt: 'WarMachine' }
+  // { img: 'https://img.imliuk.com/Groot.webp', alt: 'Gamora' },
+  // { img: 'https://img.imliuk.com/Hawkeye.webp', alt: 'Groot' },
+  // { img: 'https://img.imliuk.com/loki.webp', alt: 'Hawkeye' },
+  // { img: 'https://img.imliuk.com/Nebula.webp', alt: 'loki' },
+  // { img: 'https://img.imliuk.com/NickFury.webp', alt: 'Nebula' },
+  // { img: 'https://img.imliuk.com/Rocket.webp', alt: 'NickFury' },
+  // { img: 'https://img.imliuk.com/SamWilson.webp', alt: 'Rocket' },
+  // { img: 'https://img.imliuk.com/SpiderMan.jpeg', alt: 'SamWilson' },
+  // { img: 'https://img.imliuk.com/StarLord.webp', alt: 'StarLord' },
+  // { img: 'https://img.imliuk.com/Textless.webp', alt: 'Textless' },
+  // { img: 'https://img.imliuk.com/Wanda.webp', alt: 'Wanda' },
+  // { img: 'https://img.imliuk.com/WarMachine.jpg', alt: 'WarMachine' }
 ]
 export default function Thanos() {
   const [offset, setOffset] = useState(0)
@@ -216,10 +216,10 @@ export default function Thanos() {
         width,
         height
       )
-      imgList[list[i]].scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-      })
+      // imgList[list[i]].scrollIntoView({
+      //   behavior: 'smooth',
+      //   // block: 'center'
+      // })
       await new Promise<void>((resolve) => {
         setTimeout(() => {
           resolve()
@@ -238,10 +238,10 @@ export default function Thanos() {
       })
     }
     if (snapDivRef.current) {
-      snapDivRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-      })
+      // snapDivRef.current.scrollIntoView({
+      //   behavior: 'smooth',
+      //   // block: 'center'
+      // })
     }
     pending.current = false
     recover.current = !recover.current
@@ -320,9 +320,9 @@ export default function Thanos() {
                 <Image
                   src={el.img}
                   alt={el.alt}
-                  sizes="(max-height: 264px) (max-width: 200px)"
                   fill
                   loader={() => el.img}
+                  crossOrigin={'anonymous'}
                   priority
                 />
               </div>
