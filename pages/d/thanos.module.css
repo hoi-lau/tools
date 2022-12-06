@@ -32,6 +32,13 @@
   height: 80px;
 }
 
+.thanosSnap {
+  background-image: url('https://img.imliuk.com/thanos_snap.png');
+}
+.thanosTime {
+  background-image: url('https://img.imliuk.com/thanos_time.png');
+}
+
 .ashHero {
   transition: transform 1s ease-out, opacity 1s ease-out;
   /* animation-fill-mode: forwards; */

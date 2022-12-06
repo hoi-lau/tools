@@ -5,8 +5,8 @@ import styles from './thanos.module.css'
 import { isMobile } from '../../utils/browserUtils'
 import Link from 'next/link'
 
-const ThanosSnap = 'https://img.imliuk.com/thanos_snap.png'
-const ThanosTime = 'https://img.imliuk.com/thanos_time.png'
+const ThanosSnap = styles.thanosSnap
+const ThanosTime = styles.thanosTime
 // function
 const offset = {
   x: 28 * 2,
@@ -170,11 +170,10 @@ export default function Thanos() {
       setOffset((offset) => {
         if (offset > -48) {
           return offset - 1
-        } else {
-          // pending.current = false
-          startAnimation()
-          clearInterval(cancelId)
         }
+        // pending.current = false
+        startAnimation()
+        clearInterval(cancelId)
         return 0
       })
     }, 84)
@@ -256,6 +255,7 @@ export default function Thanos() {
         <meta name="title" content="Thanos Snap" />
         <meta name="keywords" content="Thanos Snap" />
         <meta name="description" content="Thanos Snap" />
+        <link rel="prefetch" href="https://img.imliuk.com/thanos_time.png" as="image" />
       </HeadMeta>
       <div>
         <div className="my-4">
@@ -295,9 +295,8 @@ export default function Thanos() {
             <source src="/audio/thanos_dust_5.mp3" />
           </audio>
           <div
-            className={`cursor-pointer mx-auto ${styles.gauntlet}`}
+            className={`cursor-pointer mx-auto ${styles.gauntlet} ${currentGauntletImg}`}
             style={{
-              backgroundImage: `url(${currentGauntletImg})`,
               backgroundPositionX: `${offset * 80}px`
             }}
             onClick={handleGauntletClick}

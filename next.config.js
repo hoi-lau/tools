@@ -12,6 +12,7 @@ const nextConfig = {
   // assetPrefix: isProd ? 'https://img.imliuk.com' : undefined,
   images: {
     // minimumCacheTTL: 60,
+    unoptimized: true,
     domains: ['img.imliuk.com']
   },
   experimental: {
